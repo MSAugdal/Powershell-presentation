@@ -25,7 +25,7 @@ powershell.exe
 - Fortsatt støttet
 
 pwsh.exe
-- versjon 6.0 <
+- versjon 6.0 og videre
 - .NET core
 - Cross platform
 - Open source
