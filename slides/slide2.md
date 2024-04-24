@@ -1,26 +1,70 @@
-Command line shell 
+### Command line shell 
 ```ps1
 PS C:\User> Get-ChildItem
 ```
 <!-- .element: data-id="code" -->
 
+---
+
+### Command line shell
+```html
+<body>
+    <div>I'm a div!</div> <-- Child element of body
+</body>
+```
+<!-- .element: data-id="code" -->
+
+---
+
+### Command line shell 
+```html
+<body>
+    <div>I'm a div!</div> <-- Child element of body
+</body>
+```
+
+```html
+<Directory>
+    <File>I'm a file!</File> <-- Child item of Directory
+</Directory>
+```
+
+---
+
+### Command line shell 
 ```ps1
+PS C:\User> Get-ChildItem
+```
+```console
     Directory: C:\User
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
-d-----         4/23/2024   6:14 PM                Homework
+d-----         4/23/2024   6:14 PM                Homework 
 ```
-<!-- .element: class="fragment fade-in" -->
+<!-- .element: class="fragment fade-in" data-id="console" -->
+
 ---
 
-#### Powershell som command-line shell
-- Command-line history
-- Tab completion
-- Command prediction
-- Alias
-- Piping
-- help system (man pages)
+### Command line shell 
+```console
+    Directory: C:\User  <----
+                            ^
+Name                        |
+----                        
+Homework <-- Child item of Directory
+```
+<!-- .element: data-id="console" -->
+
+---
+
+#### Powershell command-line shell
+- Command-line history <!-- .element: class="fragment fade-in" -->
+- Tab completion <!-- .element: class="fragment fade-in" -->
+- Command prediction <!-- .element: class="fragment fade-in" -->
+- Alias (eks: ls --> Get-ChildItem) <!-- .element: class="fragment fade-in" -->
+- Piping (eks: ls | Out-File -FilePath ./out.txt) <!-- .element: class="fragment fade-in" -->
+- help system (man pages) <!-- .element: class="fragment fade-in" -->
 
 ---
 
