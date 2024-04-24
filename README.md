@@ -5,14 +5,6 @@ powershell er:
 - Et scriptingspråk
 - Et rammeverk for configurasjonsadministrasjon
 
-Inkluderer samme funksjoner som andre shell:
-- Command-line history
-- Tab completion
-- Command prediction
-- Alias
-- Piping
-- help system (man pages)
-
 ## Powershell som command line shell
 støtter populære funksjoner fra andre shell 
 - Command-line history
@@ -37,19 +29,20 @@ Viktigste .NET objects:
 ## powershell på .NET?
 Før jeg kan svare på det spørsmålet er det 1 viktig ting å vite
 
-### To versjoner
-powershell.exe
-- OG powershell
-- versjon 1.0 - 5.1
-- .NET framework
-- Bare på windows
-- Fortsatt støttet
+### De to versjonene av Powershell og .NET
+|Powershell.exe|pwsh.exe|
+-------------------------
+|OG powershell |Nye powershell	|
+-------------------------
+|Versjon 1.0 - 5.1|Versjon 6.0 og videre|
+-------------------------
+|.NET framework|.NET Core framework|
+------------------------
+|Bare på windows|Cross platform|
+------------------------
+|Closed source|Open source|
+------------------------
 
-pwsh.exe
-- versjon 6.0 og videre
-- .NET core
-- Cross platform
-- Open source
 
 ## Powershell som scriptingspråk
 støtte for
