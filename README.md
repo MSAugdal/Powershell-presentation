@@ -110,10 +110,15 @@ PowerShell bruker et verb-substantiv navnepar for å navngi cmdlets.
 
 De viktigste CMDletene i powershell er "help", "get-command" og "get-alias".
 
+#### get-command og get-alias
 Om du er usikker på hvilken kommando du trenger, men vet at du vil hente noe, altså "get", kan du skrive "get-command get-*" eller "get-alias get-*"
 
-"\*" er så og si universerlt i alle operativsystemer, og betyr "hva som helst". "get-*" betyr da, alt som starter på "get-".
+"\*" er så og si universelt i alle operativsystemer, og betyr "hva som helst". "get-*" betyr da, alt som starter på "get-".
 
+#### help command
+Om du kan man pages i Linux kan du allerede help kommandoen.
+Help cmdleten viser en "help page" for den spesifiserte kommandoen.
+Denne help pagen som vises forklarer hva cmdleten brukes til, hva den  tar som input, hvilke CLI-flags den tar og hva den gir som output.
 
 
 # Oppgaver
