@@ -29,7 +29,7 @@ Viktigste .NET objects:
 ## powershell på .NET?
 Før jeg kan svare på det spørsmålet er det 1 viktig ting å vite
 
-### De to versjonene av Powershell og .NET
+### Det er to versjonene av Powershell og .NET
 |Powershell.exe	    |pwsh.exe		    |
 |-------------------|-----------------------|
 |OG powershell	    |Nye powershell	    |
@@ -45,7 +45,7 @@ støtte for
 ```ps1
 Class MyClass {
     [string]$Name
-    [int]$Age = 10
+    [int32]$Age = 10
     [bool]$Active = false
 }
 $Obj = [MyClass]::New() #initialize class
@@ -71,7 +71,25 @@ param (
 Write-Output $Name
 Write-Output $Age
 ```
+- Types
+- Formattering av output
+- Innebygget støtte for JSON, XML og CSV
 
+## Powershell for konfigurasjonsadministrasjon
+På grunn av Powershells evne til å bli utvidet med funksjoner, classes og moduler,</br>
+Er det mulig å bruke powershell for deployment og konfigurasjon av nesten </br>
+hvilken som helst teknologi du jobber med. </br>
+F.eks:
+Microsoft
+- Azure
+- Windows
+- Exchange
+- SQL
+
+Third Pary
+- AWS
+- VMWare
+- Google Cloud
 
 # Oppgaver
 1. Display a list of running processes.
