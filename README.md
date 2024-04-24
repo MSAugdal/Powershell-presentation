@@ -31,7 +31,7 @@ Før jeg kan svare på det spørsmålet er det 1 viktig ting å vite
 
 ### De to versjonene av Powershell og .NET
 |Powershell.exe	    |pwsh.exe		    |
-|--------------	----|-----------------------|
+|-------------------|-----------------------|
 |OG powershell	    |Nye powershell	    |
 |Versjon 1.0 - 5.1  |Versjon 6.0 og videre  |
 |.NET framework	    |.NET Core framework    |
