@@ -77,9 +77,10 @@ Write-Output $Age
 
 ## Powershell for konfigurasjonsadministrasjon
 På grunn av Powershells evne til å bli utvidet med funksjoner, classes og moduler,</br>
-Er det mulig å bruke powershell for deployment og konfigurasjon av nesten </br>
+er det mulig å bruke powershell for deployment og konfigurasjon av nesten </br>
 hvilken som helst teknologi du jobber med. </br>
 F.eks:
+
 Microsoft
 - Azure
 - Windows
@@ -90,6 +91,30 @@ Third Pary
 - AWS
 - VMWare
 - Google Cloud
+
+## Basics av PowerShell bruk
+Powershell bruker noe som kalles for CMDlets.
+CMDlets er som ferdiglaget funksjoner som gjør en spesifikk ting,
+ og tar som oftest et input, og gir et output.
+
+cmdlets er powershell native kommandoer, altså at de stammer fra powershell, og ikke eksterne executables.
+
+cmdlets er samlet i moduler. Du kan tenke på det som å importere er bibliotek i python, f.eks. numpy. Når du importerer en modul får du tilgang til alle kommandoene tilhørende den modulen.
+
+cmdlets som tilhører en spesifikk modul har ofte en "preface" med navnet på modulen de stammer fra. La oss si at du importerer en AWS modul. Alle cmdlets fra AWS modulen vil da starte med AWS.
+
+cmdlets kan bli skrevet i hvilken som helst programmeringsspråk basert på .NET. Det vil si C#, F# O.L.
+
+PowerShell bruker et verb-substantiv navnepar for å navngi cmdlets.
+ verb: get, set, create osv. substantiv: service, alias, command osv.
+
+De viktigste CMDletene i powershell er "help", "get-command" og "get-alias".
+
+Om du er usikker på hvilken kommando du trenger, men vet at du vil hente noe, altså "get", kan du skrive "get-command get-*" eller "get-alias get-*"
+
+"*" er så og si universerlt i alle operativsystemer, og betyr "hva som helst". "get-*" betyr da, alt som starter på "get-".
+
+
 
 # Oppgaver
 1. Display a list of running processes.
