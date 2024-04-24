@@ -54,7 +54,7 @@ pwsh.exe
 ## Powershell som scriptingspråk
 støtte for
 - classes
-- ```ps1
+```ps1
 Class MyClass {
     [string]$Name
     [int]$Age = 10
@@ -64,7 +64,7 @@ $Obj = [MyClass]::New() #initialize class
 $Obj.Name = "Myname" # Access and set property
 ```
 - functions
-- ```ps1
+```ps1
 Function Get-MyFunction{
     #TODO
 }
