@@ -15,24 +15,24 @@ Inkluderer samme funksjoner som andre shell:
 
 ## Powershell som command line shell
 støtter populære funksjoner fra andre shell 
-       - Command-line history
-       - Tab completion
-       - Command prediction
-       - Alias (eks: ls --> Get-ChildItem)
-       - Piping (eks: ls | Out-File -FilePath ./out.txt)
-       - help system (man pages)
+- Command-line history
+- Tab completion
+- Command prediction
+- Alias (eks: ls --> Get-ChildItem)
+- Piping (eks: ls | Out-File -FilePath ./out.txt)
+- help system (man pages)
 
 ## Det unike med powershell shell:
 - Bygget på .NET
 - Støtter .NET objects som input/output
 
 Viktigste .NET objects:
-    - string
-    - int
-    - float
-    - array
-    - hashmap
-    - custom-objects
+- string
+- int
+- float
+- array
+- hashmap
+- custom-objects
 
 ## powershell på .NET?
 Før jeg kan svare på det spørsmålet er det 1 viktig ting å vite
