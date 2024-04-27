@@ -1,6 +1,62 @@
+## Command line shell
+
+---
+
+### Tab Completion
+```ps1
+PS C:\Users\Sawcon> Get-
+```
+<!-- .element: data-id="tab" -->
+
+---
+
+### Tab Completion
+```ps1
+PS C:\Users\Sawcon> Get-
+Get-Alias                        Get-EventSubscriber              Get-ItemProperty                 Get-PSBreakpoint                 Get-Random
+Get-ChildItem                    Get-ExecutionPolicy              Get-ItemPropertyValue            Get-PSCallStack                  Get-Runspace
+Get-Clipboard                    Get-ExperimentalFeature          Get-Job                          Get-PSDrive                      Get-RunspaceDebug
+Get-CmsMessage                   Get-FileHash                     Get-Location                     Get-PSHostProcessInfo            Get-SecureRandom
+Get-Command                      Get-FormatData                   Get-MarkdownOption               Get-PSProvider                   Get-TimeZone
+Get-Content                      Get-Help                         Get-Member                       Get-PSReadLineKeyHandler         Get-TraceSource
+Get-Credential                   Get-History                      Get-Module                       Get-PSReadLineOption             Get-TypeData
+Get-CredsFromCredentialProvider  Get-Host                         Get-Package                      Get-PSRepository                 Get-UICulture
+Get-Culture                      Get-InstalledModule              Get-PackageProvider              Get-PSResource                   Get-Unique
+Get-Date                         Get-InstalledPSResource          Get-PackageSource                Get-PSResourceRepository         Get-Uptime
+Get-Error                        Get-InstalledScript              Get-PfxCertificate               Get-PSScriptFileInfo             Get-Variable
+Get-Event                        Get-Item                         Get-Process                      Get-PSSession                    Get-Verb
+```
+<!-- .element: data-id="tab" -->
+
+---
+
+### Command prediction
+```ps1
+PS C:\Users\Sawcon> G
+```
+<!-- .element: data-id="cmd" -->
+
+---
+
+### Command prediction
+```ps1
+PS C:\Users\Sawcon> G
+                    Get-command
+```
+<!-- .element: data-id="cmd" -->
+
+---
+
+### Alias
+```ps1
+PS C:\Users\Sawcon> ls
+```
+
+---
+
 ### Command line shell 
 ```ps1
-PS C:\User> Get-ChildItem
+PS C:\Users\Sawcon> Get-ChildItem
 ```
 <!-- .element: data-id="code" -->
 
@@ -33,51 +89,90 @@ PS C:\User> Get-ChildItem
 
 ### Command line shell 
 ```ps1
-PS C:\User> Get-ChildItem
+PS C:\Users\Sawcon> Get-ChildItem
 ```
 ```console
-    Directory: C:\User
+    Directory: C:\Users\Sawcon
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 d-----         4/23/2024   6:14 PM                Homework 
+f-----         4/20/2024   6:14 PM           1420 config.json
 ```
 <!-- .element: class="fragment fade-in" data-id="console" -->
 
 ---
 
-### Command line shell 
-```console
-    Directory: C:\User  <----
-                            ^
-Name                        |
-----                        
-Homework <-- Child item of Directory
-```
-<!-- .element: data-id="console" -->
-
----
-
-#### Powershell command-line shell
-- Command-line history <!-- .element: class="fragment fade-in" -->
-- Tab completion <!-- .element: class="fragment fade-in" -->
-- Command prediction <!-- .element: class="fragment fade-in" -->
-- Alias (eks: ls --> Get-ChildItem) <!-- .element: class="fragment fade-in" -->
-- Piping (eks: ls | Out-File -FilePath ./out.txt) <!-- .element: class="fragment fade-in" -->
-- help system (man pages) <!-- .element: class="fragment fade-in" -->
-
----
-
-### Det unike med PowerShell Shell
-Støtte for .NET objects som input/output
-
+### Piping
 ```ps1
-PS C:\User> $String = "Hello, world!"
+PS C:\User\Sawcon> Object | Function
+```
+<!-- .element: data-id="pipe" -->
+
+---
+
+### Piping
+```js [1:]
+const OBJECT = "I'm a string!";
+```
+<!-- .element: data-id="pipe" -->
+
+---
+
+### Piping
+```js [1: 3-6]
+const OBJECT = "I'm a string!";
+
+function giveMeInput(inputStr) {
+    // Do something with input
+    return modifiedInput;
+}
+```
+<!-- .element: data-id="pipe" -->
+
+---
+
+### Piping
+```js [1: 8]
+const OBJECT = "I'm a string!";
+
+function giveMeInput(inputStr) {
+    // Do something with input
+    return modifiedInput;
+}
+
+const OUTPUT = giveMeInput(OBJECT);
+```
+<!-- .element: data-id="pipe" -->
+
+---
+
+### Piping
+```js [1: 10]
+const OBJECT = "I'm a string!";
+
+function giveMeInput(inputStr) {
+    // Do something with input
+    return modifiedInput;
+}
+
+const OUTPUT = giveMeInput(OBJECT);
+
+console.log(OUTPUT);
+```
+<!-- .element: data-id="pipe" -->
+
+---
+
+### Det unike med PowerShell
+#### Bygget på .NET framework
+```ps1
+PS C:\Users\Sawcon> $String = "Hello, world!"
 ```
 <!-- .element: class="fragment fade-in" -->
 
 ```ps1
-PS C:\User> $String | Get-Member
+PS C:\Users\Sawcon> $String | Get-Member
 
 ```
 <!-- .element: class="fragment fade-in" -->
@@ -142,6 +237,17 @@ Length           Property              int Length {get;}
 
 ---
 
+## To versjoner
+|Powershell.exe	    |pwsh.exe		    |
+|-------------------|-----------------------|
+|OG powershell	    |Nye powershell	    |
+|Versjon 1.0 - 5.1  |Versjon 6.0 og videre  |
+|.NET framework	    |.NET Core framework    |
+|Bare på windows    |Cross platform	    |
+|Closed source	    |Open source	    |
+
+---
+
 Scriptingspråk 
 ```ps1 [1:]
 function Get-FolderContent() {
@@ -153,12 +259,12 @@ Get-FolderContent
 <!-- .element: data-id="code" -->
 
 ```ps1
-PS C:\User>./Get-FolderContent.ps1
+PS C:\Users\Sawcon>./Get-FolderContent.ps1
 ```
 <!-- .element: class="fragment fade-in" -->
 
 ```ps1
-    Directory: C:\User
+    Directory: C:\Users\Sawcon
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
@@ -174,7 +280,7 @@ d-----         4/23/2024   6:14 PM                Homework
 Function MyFunction() {
     #TODO
 }
-MyFunction()
+MyFunction
 
 # Classes
 Class MyClass {
@@ -188,6 +294,6 @@ $Obj.Name = "MyName"
 
 Konfigurasjonsadminiastrasjon 
 ```ps1
-PS C:\User> Set-ExecutionPolicy Bypass
+PS C:\Users\Sawcon> Set-ExecutionPolicy Bypass
 ```
 <!-- .element: data-id="code" -->
