@@ -1,3 +1,12 @@
+# Brainf##k <!-- .element: data-id="bamboozle" -->
+
+---
+
+# ~~Brainf##k~~ <!-- .element: data-id="bamboozle" -->
+# PowerShell <!-- .element: style="color: blue;" -->
+
+---
+
 ## Hva er PowerShell? <!-- .element:  data-id="title" -->
 
 - Et command line shell? <!-- .element: class="fragment fade-in" -->
