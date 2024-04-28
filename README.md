@@ -120,12 +120,12 @@ Help cmdleten viser en "help page" for den spesifiserte kommandoen.
 Denne help pagen som vises forklarer hva cmdleten brukes til, hva den  tar som input, hvilke CLI-flags den tar og hva den gir som output.
 
 
-# Oppgaver
+# Oppgaver (Oppgavene er på enkelsk, fordi det er lettere å skjønne vilke kommandoer dere skal bruke)
 1. Display a list of running processes.
 2. Test the connection to google.com or bing.com without using an external command like ping.
-3. Display a list of all commands that are of the cmdlet type. (This is tricky—we’ve shown you Get-Command, but you need to read the help to find out how to narrow down the list as we’ve asked.)
+3. Display a list of all commands that are of the cmdlet type. (Hint: Get-Command. use help to find out how to narrow down the list)
 4. Display a list of all aliases.
 5. Make a new alias, so you can run ntst to run netstat from a PowerShell prompt.
-6. Display a list of processes that begin with the letter p. Again, read the help for the necessary command—and don’t forget that the asterisk (*) is a near-universal wildcard in PowerShell.
+6. Display a list of processes that begin with the letter p. Read the help for the necessary command—and don’t forget that the asterisk (*) is a near-universal wildcard in PowerShell.
 7. Make a new folder (aka directory) using the New-Item cmdlet with the name of MyFolder1. Then do it again and call it MyFolder2. Use Help if you’re not familiar with New-Item.
 8. Remove the folders from step 7 in a single command. Use Get-Command to find a similar cmdlet to what we used in step 7—and don’t forget that the asterisk (*) is a near-universal wildcard in PowerShell.
