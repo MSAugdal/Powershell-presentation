@@ -27,7 +27,6 @@ Viktigste .NET objects:
 - custom-objects
 
 ## powershell på .NET?
-Før jeg kan svare på det spørsmålet er det 1 viktig ting å vite
 
 ### Det er to versjonene av Powershell og .NET
 |Powershell.exe	    |pwsh.exe		    |

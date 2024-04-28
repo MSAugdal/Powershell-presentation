@@ -105,7 +105,7 @@ f-----         4/20/2024   6:14 PM           1420 config.json
 
 ### Piping
 ```ps1
-PS C:\User\Sawcon> Object | Function
+PS C:\User\Sawcon> I-Give-Output | I-Want-Input
 ```
 <!-- .element: data-id="pipe" -->
 
@@ -141,14 +141,19 @@ function giveMeInput(inputStr) {
     return modifiedInput;
 }
 
-const OUTPUT = giveMeInput(OBJECT);
+console.log(giveMeInput(OBJECT));
 ```
 <!-- .element: data-id="pipe" -->
 
 ---
 
 ### Piping
-```js [1: 10]
+```ps1
+PS C:\User\Sawcon> $OBJECT = "I'm a string!"
+PS C:\User\Sawcon> $OBJECT | Out-Host
+```
+<!-- .element: data-id="pipe" -->
+```js
 const OBJECT = "I'm a string!";
 
 function giveMeInput(inputStr) {
@@ -156,11 +161,95 @@ function giveMeInput(inputStr) {
     return modifiedInput;
 }
 
-const OUTPUT = giveMeInput(OBJECT);
-
-console.log(OUTPUT);
+console.log(giveMeInput(OBJECT));
 ```
 <!-- .element: data-id="pipe" -->
+
+---
+
+## Help <!-- .element: data-id="title" -->
+
+---
+
+## Help <!-- .element: data-id="title" -->
+```ps1
+PS C:\Users\Sawcon> Out-Host
+```
+<!-- .element: data-id="code" -->
+
+---
+
+## help <!-- .element: data-id="title" -->
+```ps1
+PS C:\users\sawcon> Out-Host
+PS C:\users\sawcon> man Out-Host
+```
+<!-- .element: data-id="code" -->
+
+---
+
+## help <!-- .element: data-id="title" -->
+```ps1
+PS C:\users\sawcon> help Out-Host
+```
+<!-- .element: data-id="code" -->
+
+---
+
+## help <!-- .element: data-id="title" -->
+```ps1
+PS C:\users\sawcon> help Out-Host
+
+NAME
+    Out-Host
+
+SYNTAX
+    Out-Host [-Paging] [-InputObject <psobject>] [<CommonParameters>]
+
+PARAMETERS
+    -InputObject <psobject>
+
+        Required?                    false
+        Position?                    Named
+        Accept pipeline input?       true (ByValue)
+        Parameter set name           (All)
+        Aliases                      None
+        Dynamic?                     false
+        Accept wildcard characters?  false
+
+    -Paging
+
+        Required?                    false
+        Position?                    Named
+        Accept pipeline input?       false
+        Parameter set name           (All)
+        Aliases                      None
+        Dynamic?                     false
+        Accept wildcard characters?  false
+
+    <CommonParameters>
+        This cmdlet supports the common parameters: Verbose, Debug,
+        ErrorAction, ErrorVariable, WarningAction, WarningVariable,
+        OutBuffer, PipelineVariable, and OutVariable. For more information, see
+        about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+
+INPUTS
+    System.Management.Automation.PSObject
+
+OUTPUTS
+    System.Object
+
+ALIASES
+    oh
+
+REMARKS
+    Get-Help cannot find the Help files for this cmdlet on this computer. It is displaying only partial help.
+        -- To download and install Help files for the module that includes this cmdlet, use Update-Help.
+        -- To view the Help topic for this cmdlet online, type: "Get-Help Out-Host -Online" or
+           go to https://go.microsoft.com/fwlink/?LinkID=2096863.
+
+```
+<!-- .element: data-id="code" -->
 
 ---
 
