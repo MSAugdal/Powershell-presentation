@@ -54,7 +54,7 @@ PS C:\Users\Sawcon> ls
 
 ---
 
-### Command line shell 
+### Alias 
 ```ps1
 PS C:\Users\Sawcon> Get-ChildItem
 ```
@@ -62,7 +62,7 @@ PS C:\Users\Sawcon> Get-ChildItem
 
 ---
 
-### Command line shell
+### Alias
 ```html
 <body>
     <div>I'm a div!</div> <-- Child element of body
@@ -72,7 +72,7 @@ PS C:\Users\Sawcon> Get-ChildItem
 
 ---
 
-### Command line shell 
+### Alias 
 ```html
 <body>
     <div>I'm a div!</div> <-- Child element of body
@@ -87,7 +87,7 @@ PS C:\Users\Sawcon> Get-ChildItem
 
 ---
 
-### Command line shell 
+### Alias 
 ```ps1
 PS C:\Users\Sawcon> Get-ChildItem
 ```
@@ -326,18 +326,7 @@ Length           Property              int Length {get;}
 
 ---
 
-## To versjoner
-|Powershell.exe	    |pwsh.exe		    |
-|-------------------|-----------------------|
-|OG powershell	    |Nye powershell	    |
-|Versjon 1.0 - 5.1  |Versjon 6.0 og videre  |
-|.NET framework	    |.NET Core framework    |
-|Bare på windows    |Cross platform	    |
-|Closed source	    |Open source	    |
-
----
-
-Scriptingspråk 
+### Scriptingspråk 
 ```ps1 [1:]
 function Get-FolderContent() {
   get-childitem
@@ -381,8 +370,50 @@ $Obj.Name = "MyName"
 
 ---
 
-Konfigurasjonsadminiastrasjon 
+### Scriptingspråk
+Input-output
 ```ps1
-PS C:\Users\Sawcon> Set-ExecutionPolicy Bypass
+#    ./myscript.ps1 -Name "myname" -Age 18
+param (
+	[string]$Name,
+	[Int32]$Age
+)
+Write-Output $Name
+Write-Output $Age
 ```
 <!-- .element: data-id="code" -->
+
+---
+
+### Scriptingspråk
+Input-output
+```ps1
+#    ./myscript.ps1 -Name "myname" -Age 18
+param (
+	[string]$Name,
+	[Int32]$Age
+)
+Write-Output $Name
+Write-Output $Age
+```
+<!-- .element: data-id="code" -->
+
+```ps1
+PS C:\Users\Sawcon> ./myscript.ps1 -Name "MyName" -Age 18
+```
+<!-- .element: data-id="daddy" -->
+
+---
+
+### Scriptingspråk
+Input-output
+
+```ps1
+PS C:\Users\Sawcon> ./myscript.ps1 -Name "MyName" -Age 18
+
+MyName
+
+18
+```
+<!-- .element: data-id="daddy" -->
+
