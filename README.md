@@ -120,7 +120,7 @@ Help cmdleten viser en "help page" for den spesifiserte kommandoen.
 Denne help pagen som vises forklarer hva cmdleten brukes til, hva den  tar som input, hvilke CLI-flags den tar og hva den gir som output.
 
 
-# Oppgaver (Oppgavene er på enkelsk, fordi det er lettere å skjønne vilke kommandoer dere skal bruke)
+# Oppgaver (Oppgavene er på enkelsk, fordi det er lettere å skjønne hvilke kommandoer dere skal bruke)
 1. Display a list of running processes.
 2. Test the connection to google.com or bing.com without using an external command like ping.
 3. Display a list of all commands that are of the cmdlet type. (Hint: Get-Command. use help to find out how to narrow down the list)
